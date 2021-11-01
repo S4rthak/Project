@@ -1,0 +1,265 @@
+/** =============== All Over Styles =============== **/
+    * {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    li {
+    list-style:none;
+    padding: 0px 5px;
+
+    }
+    a {
+    text-decoration: none;
+    color: #4A00D8;
+    padding: 0px 20px 0px 20px;
+    }
+    h2 {
+        padding: 15px 50px;
+    }
+    input {
+        padding: 10px 150px 10px 10px;
+        margin: 10px;
+        border-radius: 50px;
+    }
+/** ==================Whole Page Style================== **/
+/*#parent {
+   
+}
+/** ==================Specific Styles================== **/
+    /** ==================Header================== **/
+    header {
+       width: auto;
+       background-color: dodgerblue;
+    }
+    .container {
+        width: 1880px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0px auto;
+        align-items: center;
+        color: white;
+    }
+    ul {
+        display: flex;
+    }
+    #mainheader {
+        background-color: white;
+        opacity: 30%;
+    }
+    #submain {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        align-items: center;
+        font-size: 30px;
+        padding: 0px 20px;
+    }
+    /** ==================Hero Section================== **/
+    #hero {
+        background-image: url(pexels-vidal-balielo-jr-3376790.jpg);
+        background-repeat: no-repeat;
+        background-size: 1920px;
+        height: 650px;
+    }
+    #welcomemedi {
+        font-size: 30px;
+        color: dodgerblue;
+    }
+    #medicare {
+        font-size: 70px;
+        color: white;
+    }
+    #heropara {
+        font-size: 20px;
+        padding: 10px 50px;
+        color:lightslategray;
+    }
+    .bluebutton {
+        margin: 20px 0px 0px 50px;
+        padding: 20px 40px;
+        border: none;
+        background-color: dodgerblue;
+        color: white;
+        border-radius: 50px;
+        font-size: 15px;
+    }
+    /**==============Below The Fold==================**/
+       /**==============Section-1==================**/
+    #sec1 {
+        display: flex;
+    }
+    #sec1img {
+        padding: 0px 75px;
+        width: 500px;
+    }
+    #sec1content {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    #sec1headin {
+        font-size: 60px;
+        padding: 100px 50px 0px;
+    }
+    #sec1para {
+        padding: 25px 50px;
+        font-size: 25px;
+        color: gray;
+    }
+    #redbutton {
+        margin: 20px 5px;
+        padding: 20px 40px;
+        border: none;
+        background-color:rgb(236, 0, 0);
+        color: white;
+        border-radius: 50px;
+        font-size: 15px;
+    }
+    /**==============Section-2==================**/
+    #sec2container {
+        background-color: rgb(246, 246, 246);
+    }
+    #sec2headin {
+        font-size: 70px;
+        width: 700px;
+    }
+    #sec2parent {
+        display: flex;
+        justify-content: space-between;
+    }
+    #cardsparent {
+        display: flex;
+        flex-direction: column;
+    }
+    .cardsholder {
+        display: flex;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 300px;
+        padding: 25px 100px;
+    }
+    .subcard {
+        display: flex
+    }
+    .cardsimg {
+        padding: 0px 20px 20px 20px;
+        width: 75px;
+        height:75px;
+    }
+    .cardsheadin {
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+    #formdiv {
+        margin: 0px 20px 0px 0px;
+        background-color: white;
+        width: 500px;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #formheadin {
+        padding: 10px 10px 30px 10px;
+        color: dodgerblue;
+    }
+    #formbutton {
+        margin: 20px 5px;
+        padding: 10px 140px;
+        border: none;
+        background-color:rgb(236, 0, 0);
+        color: white;
+        border-radius: 50px;
+        font-size: 15px;
+    }
+    /**==============Section-3==================**/
+    #sec3container {
+        background-image: url(ArmsAkimbo.jpg);
+        background-position-y: -200px;
+        background-repeat: no-repeat;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sec3headin {
+        font-weight:bolder;
+        font-size: 75px;
+        padding: 20px;
+    }
+    #sec3para {
+        padding-bottom: 20px;
+        color: dodgerblue;
+    }
+    #sec3button {
+        margin: 20px 0px 0px 50px;
+        padding: 20px 40px;
+        border: none;
+        background-color: darkgray;
+        color: white;
+        border-radius: 50px;
+        font-size: 15px;
+    }
+    /**==============Section-4==================**/
+    .sec4container {
+        display: flex;
+        justify-content: center;
+    }
+    #sec4img {
+        width: 857px;
+        height: 977px;
+    }
+    .cardscontainer {
+        display: flex;
+    }
+    .sec4cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        padding: 25px 25px 0px 25px;
+        border: lightgray;
+        border-width: 1px;
+        border-style: solid;
+    }
+    /**==============Section-5==================**/
+
+    /**==============Section-6==================**/
+    /**==============Section-7==================**/
+    /**==============Section-8==================**/
+    /**==============Section-9==================**/
+    /**==============Section-10=================**/
+    /**==============Section-11=================**/
+    /**================Footer==================**/
+    #footercontainer {
+        background-image: url(footer.jpg);
+        height: 700px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .footsecs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 250px;
+        height: 250px;
+        padding-top: 175px;
+    }
+    .footicons {
+        width: 50px;
+    }
+    .ulfoot {
+        display: flex;
+        flex-direction: column;
+    }
+    .lifoot {
+        color: dodgerblue;
+        font-size: 20px;
+        list-style: square;
+    }
