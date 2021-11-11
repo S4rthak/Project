@@ -175,18 +175,65 @@
                     </div>
                 </div>
                 <div id="formdiv">
-                    <form action="" id="form">
+                    <form action="">
                         <h3 id="formheadin">Free Consultation</h3>
-                        <input type="text" name="fname" placeholder="First Name"><br>
-                        <input type="text" name="lname" placeholder="Last Name"><br>
-                        <input type="search" name="services" placeholder="Select Your Services"><br>
-                        <input type="number" name="phone" placeholder="Phone"><br>
-                        <input type="date" name="date" placeholder="Date"><br>
-                        <input type="time" name="time" placeholder="Time"><br>
-                        <input type="text" name="message" placeholder="Message"><br>
-                        <input id="formbutton" type="submit" name="Submit" placeholder="Appointment"><br>
+                        <input id="fname" type="text" name="fname" placeholder="First Name"><br>
+                        <input id="lname" type="text" name="lname" placeholder="Last Name"><br>
+                        <input id="services" type="search" name="services" placeholder="Select Your Services"><br>
+                        <input id="phone" type="number" name="phone" placeholder="Phone"><br>
+                        <input id="date" type="date" name="date" placeholder="Date"><br>
+                        <input id="time" type="time" name="time" placeholder="Time"><br>
+                        <input id="message" type="text" name="message" placeholder="Message"><br>
+                        <input id="password" type="password" name="password" placeholder="Password">
+                        <input id="formbutton" type="button" value="Apponitment" onclick="showPage()" name="Submit"><br>
                     </form>
                 </div>
+                <script>
+                    function showPage() {
+                        var fname = document.getElementById("fname").value;
+                        var lname = document.getElementById("lname").value;
+                        var services = document.getElementById("services").value;
+                        var phone = document.getElementById("phone").value;
+                        var date = document.getElementById("date").value;
+                        var time = document.getElementById("time").value;
+                        var message = document.getElementById("message").value;
+                        var password = document.getElementById("password").value;
+                        // if (fname==""){alert("Fill the First Name")}
+                        // else{console.log("The First Name Is" + " " + (fname))}
+                        // if (fname.length>=10){alert("First Name should be 10 characters")}
+
+                        // if (lname==""){alert("Fill the Last Name")}
+                        // else{console.log("The Last Name Is" + " " + (lname))}
+                        // if (lname.length>=10){alert("Last Name should be 10 characters")}
+
+                        // if (services==""){alert("Fill the Service")}
+                        // else{console.log("The Service Is" + " " + (services))}
+                        // if (services.length>=20){alert("Service should be 20 characters")}
+
+                        // if (phone==""){alert("Fill the phone number")}
+                        // else{console.log("The Phone Number Is" + " " + (phone))}
+                        // if (phone.length<=10){alert("Phone Number should be 10 characters")}
+
+                        // if (date==""){alert("Fill the Date")}
+                        // else{console.log("The Date Is" + " " + (date))}
+
+                        // if (time==""){alert("Fill the Time")}
+                        // else{console.log("The Time" + " " + (time))}
+
+                        // if (message==""){alert("Fill the Message")}
+                        // else{console.log("The Message is" + " " + (message))}
+                        // if (message.length>=100){alert("Message should be 100 characters")}
+
+                        if (password == "Password") { alert("The password can not be password") }
+                        else { console.log("The Password is" + " " + (password)) }
+                        // console.log("The Last Name Is" + " " + (lname));
+                        // console.log("The Selected Service Is" + " " + (services));
+                        // console.log("The Phone Number Is" + " " + (phone));
+                        // console.log("The Date Is" + " " + (date));
+                        // console.log("The Time Is" + " " + (time));
+                        // console.log("The Message Is" + " " + (message));
+                    }
+                </script>
             </div>
         </div>
         <!-----------Section-3----------->
@@ -298,13 +345,96 @@
                 </div>
             </div>
         </div>
+        <!-----------Section-5----------->
+        <div id="sec5container">
+            <div>
+                <h2 id="sec5headin">Our Qualified Doctors</h2>
+                <p id="sec5para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore hic ullam facere. Eos
+                    nihil voluptate vel aperiam amet consequuntur corrupti odio blanditiis rem omnis doloremque sunt,
+                    vero
+                    aliquid porro quaerat? ipsum dolor sit amet, consectetur adipisicing elit. Quis deleniti voluptatum
+                    sapiente.
+                </p>
+            </div>
+        </div>
+        <!-----------Section-7----------->
+        <div id="sec7container">
+            <div class="sec7cards">
+                <img src="" alt="">
+                <div>Lorem, ipsum.</div>
+                <div>Loremd,lfs</div>
+                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, magnam!</div>
+                <button>Book Now</button>
+            </div>
+            <div class="sec7cards">
+                <img src="" alt="">
+                <div>Lorem, ipsum.</div>
+                <div>Loremd,lfs</div>
+                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, magnam!</div>
+                <button>Book Now</button>
+            </div>
+            <div class="sec7cards">
+                <img src="" alt="">
+                <div>Lorem, ipsum.</div>
+                <div>Loremd,lfs</div>
+                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, magnam!</div>
+                <button>Book Now</button>
+            </div>
+            <div class="sec7cards">
+                <img src="" alt="">
+                <div>Lorem, ipsum.</div>
+                <div>Loremd,lfs</div>
+                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, magnam!</div>
+                <button>Book Now</button>
+            </div>
+        </div>
+        <!-----------Section-6----------->
+        <div id="sec6container">
+            <div id="uppersec6">
+                <h2 id="sec6headin">Contact Us</h2>
+                <div id="sec6paracontainer">
+                    <p id="sec6para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore hic ullam facere.
+                        Eos
+                        nihil voluptate vel aperiam amet consequuntur corrupti odio blanditiis rem omnis doloremque
+                        sunt,
+                    </p>
+                    <div id="sec6para2">
+                        vero aliquid porro quaerat?
+                    </div>
+                </div>
+            </div>
+            <div id="lowersec6">
+                <div id="sec6cards">
+                    <img class="cardsimg" src="Telegram_logo_PNG3.png" alt="">
+                    <div>ADDRESS</div>
+                    <div class="sec6cardspara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius.</div>
+                </div>
+                <div id="sec6cards">
+                    <img class="cardsimg" src="Telegram_logo_PNG3.png" alt="">
+                    <div>CONTACT NUMBER</div>
+                    <div class="sec6cardspara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates!</div>
+                </div>
+                <div id="sec6cards">
+                    <img class="cardsimg" src="Telegram_logo_PNG3.png" alt="">
+                    <div>EMAIL ADDRESS</div>
+                    <div class="sec6cardspara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae.</div>
+                </div>
+                <div id="sec6cards">
+                    <img class="cardsimg" src="Telegram_logo_PNG3.png" alt="">
+                    <div>WEBSITE</div>
+                    <div class="sec6cardspara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit?</div>
+                </div>
+            </div>
+        </div>
         <!-------------Footer--------------->
         <div id="footercontainer">
             <div class="footsecs">
                 <h4>Mediplus</h4>
                 <p>Twinkle Twinkle little star how i wonder what u are.More i dont know xD.</p>
                 <div style="display: flex; justify-content: space-evenly;">
-                    <a href=""> <img class="footicons" src="kisspng-facebook-inc-social-media-computer-icons-social-share-facebook-5b2d58d819d2a7.4991063615296985201058.png"alt=""></a>
+                    <a href=""> <img class="footicons"
+                            src="kisspng-facebook-inc-social-media-computer-icons-social-share-facebook-5b2d58d819d2a7.4991063615296985201058.png"
+                            alt=""></a>
                     <a href=""> <img class="footicons" src="pngegg.png"></a>
                     <a href=""> <img class="footicons" src="instagram-round-icon-png-18.jpg" alt=""></a>
                 </div>
@@ -345,10 +475,18 @@
             </div>
             <div class="footsecs">
                 <div class="ulfoot">
-                    <h4>Have a Question?</h4>
-                    <p> 17/11 Beakers Street </p>
-                    <p>+12345678901234</p>
-                    <p>infobaka@tootagmail.com</p>
+                    <div>
+                        <h4>Have a Question?</h4>
+                    </div>
+                    <div>
+                        <div> 17/11 Beakers Street </div>
+                    </div>
+                    <div>
+                        <div>+12345678901234</div>
+                    </div>
+                    <div>
+                        <div>infobaka@tootagmail.com</div>
+                    </div>
                 </div>
             </div>
         </div>

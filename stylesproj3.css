@@ -119,6 +119,7 @@
     /**==============Section-2==================**/
     #sec2container {
         background-color: rgb(246, 246, 246);
+        height: 800px;
     }
     #sec2headin {
         font-size: 70px;
@@ -127,6 +128,7 @@
     #sec2parent {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     #cardsparent {
         display: flex;
@@ -156,19 +158,26 @@
     }
     #formdiv {
         margin: 0px 20px 0px 0px;
-        background-color: white;
         width: 500px;
         height: 600px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        padding: 15px 30px;
+        
+    }
     #formheadin {
         padding: 10px 10px 30px 10px;
         color: dodgerblue;
     }
     #formbutton {
-        margin: 20px 5px;
+        margin: 10px 5px;
         padding: 10px 140px;
         border: none;
         background-color:rgb(236, 0, 0);
@@ -229,12 +238,80 @@
         border-style: solid;
     }
     /**==============Section-5==================**/
+    #sec5container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+    }
+    #sec5headin {
+        font-size: 75px;
+        font-weight: bolder;
+        padding: 20px;
+    }
+    #sec5para {
+        padding-bottom: 20px;
+        color: dodgerblue;
+        width: 700px;
+    }
 
     /**==============Section-6==================**/
+    #sec7container {
+        display: flex;
+        justify-content: space-evenly;
+    }
     /**==============Section-7==================**/
     /**==============Section-8==================**/
     /**==============Section-9==================**/
     /**==============Section-10=================**/
+    #sec6container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #sec6paracontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #uppersec6 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #sec6headin {
+        font-size: 75px;
+        font-weight: bolder;
+    }
+    #sec6para {
+        color: dodgerblue;
+        width: 700px;
+    }
+    #sec6para2 {
+        color: dodgerblue;
+        padding-bottom:30px ;
+    }
+    #lowersec6 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #sec6cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 30px;
+        background-color: rgb(243, 243, 243);
+        width: 300px;
+        height: 350px;
+        font-weight: bolder;
+    }
+    .sec6cardspara {
+        width: 200px;
+    }
     /**==============Section-11=================**/
     /**================Footer==================**/
     #footercontainer {
@@ -261,5 +338,8 @@
     .lifoot {
         color: dodgerblue;
         font-size: 20px;
-        list-style: square;
+    }
+    .lifoot::before{
+        content: '\2192';
+        padding-right:10px ;
     }
