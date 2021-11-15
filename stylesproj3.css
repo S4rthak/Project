@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 0.5px;
     }
     li {
     list-style:none;
@@ -30,22 +31,28 @@
     /** ==================Header================== **/
     header {
        width: auto;
+       height: 30px;
        background-color: dodgerblue;
+       display: flex;
+       justify-content: center;
+       align-items: center;
     }
     .container {
         width: 1880px;
-        display: flex;
-        justify-content: space-between;
-        margin: 0px auto;
-        align-items: center;
+        display:flex;
+        justify-content: space-evenly;
         color: white;
     }
     ul {
-        display: flex;
+        display:flex;
+    }
+    #line::before {
+        content: "\007C";
+        padding-right: 10px;
+
     }
     #mainheader {
-        background-color: white;
-        opacity: 30%;
+        background-color: rgba(255, 255, 255, 0.8);
     }
     #submain {
         display: flex;
@@ -54,6 +61,16 @@
         align-items: center;
         font-size: 30px;
         padding: 0px 20px;
+    }
+    #mainheaderbutton {
+        margin: 20px 5px;
+        padding: 20px 40px;
+        border: none;
+        background-color:rgb(255, 62, 62);
+        color: white;
+        border-radius: 20px;
+        font-size: 15px
+
     }
     /** ==================Hero Section================== **/
     #hero {
@@ -170,6 +187,7 @@
         justify-content: center;
         background-color: white;
         padding: 15px 30px;
+        margin-bottom: 40px;
         
     }
     #formheadin {
@@ -250,20 +268,192 @@
         font-weight: bolder;
         padding: 20px;
     }
-    #sec5para {
-        padding-bottom: 20px;
+    #sec5paracontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec5para {
         color: dodgerblue;
-        width: 700px;
     }
 
     /**==============Section-6==================**/
     #sec7container {
         display: flex;
         justify-content: space-evenly;
+        padding-bottom: 30px;
+    }
+    .sec7cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 400px;
+        height: 600px;
+    }
+    .sec7img {
+        width:350px ;
+    }
+    .sec7headin {
+        font-size: 30px;
+        font-weight: bolder;
+        padding-bottom: 5px;
+    }
+    .sec7occupation {
+        font-size: 20px;
+        color: dodgerblue;
+        font-weight: bold;
+        padding-bottom: 5px;
+    }
+    .sec7para {
+        color: dimgrey;
+        font-size: 15px;
+        padding-bottom:5px ;
+    }
+    .sec7button {
+        margin-top: 10px;
+        width: 200px;
+        padding: 20px 30px;
+        border: none;
+        background-color: dodgerblue;
+        color: white;
+        border-radius: 50px;
+        font-size: 15px;
     }
     /**==============Section-7==================**/
     /**==============Section-8==================**/
+    #sec8container {
+        background-image: url(ArmsAkimbo.jpg);
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 600px;
+        position: relative;
+    }
+    #overlay {
+        background-color: rgba(30, 143, 255, 0.618);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    #sec8subcontainer {
+        z-index: 2;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    #sec8left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 275px;
+        width: 600px;
+    }
+    #sec8lheadin {
+        padding: 0px;
+        font-size: 60px;
+        font-weight: 900;   
+        width: 600px;
+        word-spacing: 1px;
+    }
+    #sec8lbutton {
+        width: 200px;
+        padding: 20px 20px;
+        border: none;
+        background-color:rgb(255, 100, 100);
+        color: white;
+        border-radius: 50px;
+        font-size: 15px;
+    }
+    #sec8right {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 400px;
+        height: 300px;
+    }
+    .updownsec8 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sec8cards {
+        width: 400px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .sec8rheadin {
+        font-size: 45px;
+    }
     /**==============Section-9==================**/
+    #sec9container {
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sec9headin {
+        font-size: 60px;
+        color: rgb(31, 31, 31);
+        padding-bottom: 20px;
+    }
+    #sec9para {
+        font-size: 20px;
+        color: dimgray;
+        word-spacing: 2px;
+    }
+    /**==============Section-10=================**/
+    #sec10container {
+        display: flex;
+        width: 100%;
+        height: 1250px;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+    }
+    .sec10updown {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 540px;
+    }
+    .sec10cards {
+        width: 500px;
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .sec10img {
+        width: 500px;
+    }
+    .sec10date {
+        display: flex;
+        color: rgb(255, 50, 50);
+        word-spacing: 2px;
+    }
+    .sec10li::before {
+        content: '\2709';
+        padding-right: 10px;
+
+    }
+    .sec10headin {
+        color: rgb(31, 31, 31);
+        font-size: 30px;
+    }
+    .sec10para {
+        color: dimgray;
+        font-size: 20px;
+    }
+
     /**==============Section-10=================**/
     #sec6container {
         display: flex;
@@ -277,6 +467,7 @@
         align-items: center;
     }
     #uppersec6 {
+        height: 300px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -304,13 +495,18 @@
         justify-content: space-evenly;
         align-items: center;
         padding: 30px;
-        background-color: rgb(243, 243, 243);
-        width: 300px;
+        background-color: rgb(250, 250, 250);
+        width: 275px;
         height: 350px;
         font-weight: bolder;
     }
+    .sec6cardsheadin {
+        color: rgb(32, 32, 32);
+        font-size: large;
+    }
     .sec6cardspara {
         width: 200px;
+        color: dimgrey;
     }
     /**==============Section-11=================**/
     /**================Footer==================**/
@@ -325,7 +521,7 @@
         flex-direction: column;
         justify-content: space-between;
         width: 250px;
-        height: 250px;
+        height: 150px;
         padding-top: 175px;
     }
     .footicons {
